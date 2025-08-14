@@ -22,7 +22,7 @@ jobs:
 
       - name: Build & Pack
         run: |
-          dotnet pack -c Release SDL3-CS/SDL3-CS.sln -p:Version=${{ env.VERSION }}
+          dotnet pack -c Release SDL3-CS/SDL3-CS.sln -p:Version=${{ github.event.release.tag_name }}
 
       - name: Publish to NuGet
         run: |
