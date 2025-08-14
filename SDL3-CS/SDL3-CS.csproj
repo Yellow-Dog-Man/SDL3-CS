@@ -21,9 +21,10 @@
 
     <PropertyGroup Label="NuGet">
         <Version>3.2.20.0</Version>
+        <PackageId>YellowDogMan.SDL-CS</PackageId>
         <Title>SDL3 C#</Title>
-        <Authors>Eduard Gushchin</Authors>
-        <Company>Eduard Gushchin</Company>
+        <Authors>Eduard Gushchin, Yellow Dog Man Studios s.r.o.</Authors>
+        <Company>Eduard Gushchin, Yellow Dog Man Studios s.r.o.</Company>
         <Description>This is SDL3#, a C# wrapper for SDL 3.2.20</Description>
         <Copyright>Copyright (c) 2024-2025 Eduard Gushchin.</Copyright>
         <PackageProjectUrl>https://github.com/edwardgushchin/SDL3-CS</PackageProjectUrl>
