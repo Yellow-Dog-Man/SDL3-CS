@@ -56,6 +56,12 @@
         <None Include="../logo.png" Pack="true" Visible="false" PackagePath="\"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <Content Include="..\SDL3-CS.Native\lib\win-x64\SDL3.dll" Link="nuget\runtimes\win-x64\native\SDL3.dll" PackagePath="runtimes\win-x64\native" />
+        <Content Include="..\SDL3-CS.Native\lib\linux-x64\libSDL3.so" Link="nuget\runtimes\linux-x64\native\libSDL3.so" PackagePath="runtimes\linux-x64\native" />
+        <Content Include="..\SDL3-CS.Native\lib\linux-arm64\libSDL3.so" Link="nuget\runtimes\linux-arm64\native\libSDL3.so" PackagePath="runtimes\linux-arm64\native" />
+    </ItemGroup>
+
     <ItemGroup Condition="'$(Configuration)' == 'Release'">
         <None Include="bin\Release\SDL3-CS.xml" Visible="false" Pack="true" PackagePath="\" />
     </ItemGroup>
