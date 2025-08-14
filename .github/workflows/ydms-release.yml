@@ -1,0 +1,29 @@
+name: YDMS Release Builds
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  build-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Restore workloads
+        run: |
+          dotnet workload restore
+
+      - name: Build & Pack
+        run: |
+          dotnet pack -c Release SDL3-CS/SDL3-CS.sln -p:Version=${{ env.VERSION }}
+
+      - name: Publish to NuGet
+        run: |
+          dotnet nuget push **/*.nupkg -k ${{ secrets.NUGET_TOKEN }} -s https://api.nuget.org/v3/index.json
