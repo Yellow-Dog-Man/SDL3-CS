@@ -9,6 +9,10 @@ jobs:
   build-publish:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        project: ['SDL3-CS/SDL3-CS.sln' ,'SDL3-CS.Native/SDL3-CS.Native.sln']
+
     steps:
       - uses: actions/checkout@v4
 
@@ -18,8 +22,8 @@ jobs:
 
       - name: Build & Pack
         run: |
-          dotnet build -c Release SDL3-CS/SDL3-CS.sln -p:Version=${{ github.event.release.tag_name }}
-          dotnet pack -c Release SDL3-CS/SDL3-CS.sln -p:Version=${{ github.event.release.tag_name }}
+          dotnet build -c Release ${{ matrix.project }} -p:Version=${{ github.event.release.tag_name }}
+          dotnet pack -c Release ${{ matrix.project }} -p:Version=${{ github.event.release.tag_name }}
 
       - name: Publish to NuGet
         run: |

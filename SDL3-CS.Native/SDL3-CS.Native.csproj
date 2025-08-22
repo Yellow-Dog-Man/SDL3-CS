@@ -24,7 +24,7 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <NoWarn>1591</NoWarn>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageId>YellowDogMan.SDL-CS-Native</PackageId>
+        <PackageId>YellowDogMan.SDL-CS.Native</PackageId>
     </PropertyGroup>
 
     <ItemGroup>
