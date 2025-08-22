@@ -11,12 +11,12 @@
     <PropertyGroup Label="NuGet">
         <Version>3.2.20.0</Version>
         <Title>SDL3 C# Native library</Title>
-        <Authors>Eduard Gushchin</Authors>
-        <Company>Eduard Gushchin</Company>
+        <Authors>Eduard Gushchin, Yellow Dog Man Studios s.r.o.</Authors>
+        <Company>Eduard Gushchin, Yellow Dog Man Studios s.r.o.</Company>
         <Description>This is native library for SDL3-CS 3.2.20.x</Description>
         <Copyright>Copyright (c) 2024-2025 Eduard Gushchin.</Copyright>
-        <PackageProjectUrl>https://github.com/edwardgushchin/SDL3-CS</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/edwardgushchin/SDL3-CS</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Yellow-Dog-Man/SDL3-CS/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Yellow-Dog-Man/SDL3-CS/</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>SDL, SDL3, SDL3-CS</PackageTags>
         <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -24,6 +24,7 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <NoWarn>1591</NoWarn>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageId>YellowDogMan.SDL-CS-Native</PackageId>
     </PropertyGroup>
 
     <ItemGroup>
