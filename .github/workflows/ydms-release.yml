@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        project: ['SDL3-CS/SDL3-CS.sln' ,'SDL3-CS.Native/SDL3-CS.Native.sln']
+        project: ['SDL3-CS/SDL3-CS.sln' ,'SDL3-CS.Native/SDL3-CS.Native.csproj']
 
     steps:
       - uses: actions/checkout@v4
